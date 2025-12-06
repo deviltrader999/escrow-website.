@@ -3,28 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Create Account</title>
+<title>Sign Up</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="center-box">
-<h2>Create Your Account</h2>
-<form>
+<h2>Create Account</h2>
+<form onsubmit="signup(event)">
 <label>Full Name</label>
-<input type="text" required>
+<input type="text" id="name" required>
 <label>Email</label>
-<input type="email" required>
+<input type="email" id="email" required>
 <label>Password</label>
-<input type="password" required>
-<label>Account Type</label>
-<select>
-<option>Buyer</option>
-<option>Seller</option>
-<option>Both</option>
-</select>
+<input type="password" id="password" required>
 <button>Create Account</button>
 </form>
-<p class="login-text">Already have an account? <a href="#">Login</a></p>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
