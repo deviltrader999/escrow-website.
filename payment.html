@@ -8,12 +8,14 @@
 </head>
 <body>
 <div class="center-box">
-<h2>Payment Hold Details</h2>
-<p>Transaction Amount: $800</p>
-<p>Buyer: buyer@example.com</p>
-<p>Status: <span style="color:orange;">Funds on Hold</span></p>
-<button>Release Funds</button>
-<button>Dispute</button>
+<h2>Payment Details</h2>
+<p>Transaction ID: <span id="txId"></span></p>
+<p>Amount: <span id="txAmount"></span></p>
+<p>Buyer: <span id="txBuyer"></span></p>
+<p>Status: <span id="txStatus"></span></p>
+<button onclick="releaseFunds()">Release Funds</button>
 </div>
+<script src="script.js"></script>
+<script>loadPayment();</script>
 </body>
 </html>
